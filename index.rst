@@ -11,4 +11,10 @@
 .. toctree::
    :maxdepth: 2
 
+   newer_to_apache
+   configures
+   conf
+   sections
+   directive_properties
    modules/index
+   cgi_script

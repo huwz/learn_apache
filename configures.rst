@@ -74,11 +74,11 @@
 指令作用域
 ----------
 
-相关指令：``<Directory>``,``<DirectoryMatch>``,``<Files>``,``<FilesMatch>``,``<Location>``, ``<LocationMatch>``, ``<VirtualHost>``
+相关指令：``<Directory>``, ``<DirectoryMatch>``, ``<Files>``, ``<FilesMatch>``, ``<Location>``, ``<LocationMatch>``, ``<VirtualHost>``
 
 主配置文件中的指令会作用于整个服务器。
 如果你只想让配置只对服务器的某个部分生效，可以限定指令的作用范围；
-将指令放在 ``<Directory>``,``<DirectoryMatch>``,``<Files>``,``<FilesMatch>``,``<Location>``, ``<LoactionMatch>`` 节点中即可。
+将指令放在 ``<Directory>``, ``<DirectoryMatch>``, ``<Files>``, ``<FilesMatch>``, ``<Location>``, ``<LoactionMatch>`` 节点中即可。
 这些节点将指令的应用局限于特定的文件系统位置上或者 URL 上。
 它们可以相互嵌套，允许非常精细粒度的配置。
 
@@ -87,14 +87,14 @@
 指令也可以放在 ``<VirtualHost>`` 中，它们仅作用于特定网址的请求上。
 
 尽管绝大多数指令可以放在任意一个节点中，某些指令只有在特定场景中起作用。
-例如，控制进程产生的指令只能放在 :ref:`<main_server_configure>` 中。
+例如，控制进程产生的指令只能放在主配置文件中。
 
 可以查看 ``Context`` 确定指令可以放在哪些节点中。
 
 ``.htacess`` 文件
 -----------------
 
-相关指令：``AccessFileName``,``AllowOverride``
+相关指令：``AccessFileName``, ``AllowOverride``
 
 ``httpd`` 通过网站树中的特定文件对配置信息进行集中管理。
 特定文件通常称为 ``.htacess`` 文件，不过文件名可以通过指令 ``AccessFileName`` 修改。
